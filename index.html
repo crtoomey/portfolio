@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./script.js" defer></script>
   <title>Colin Toomey</title>
 </head>
 <body class="container">
 
   <header class="primary-head">
 
-    <div><img src="" alt=""></div>
+    <div class="logo">
+      <h1><a href="./index.html">CT</a></h1>
+    </div>
+
+    <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
 
     <nav>
-      <ul class="primary-nav">
+      <ul id="primary-nav" class="primary-nav" data-visible="false">
         <li><a href="./contact.html">Contact</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./projects.html">Projects</a></li>
@@ -23,7 +31,15 @@
   </header>
 
   <main class="primary-content">
-
+    <section class="contact">
+      <h2>Contact</h2>
+    </section>
+    <section class="about">
+      <h2>About</h2>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+    </section>
   </main>
 
   <footer class="primary-footer">

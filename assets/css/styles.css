@@ -1,24 +1,134 @@
-/* universal styles */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  background-color: #F2F2F2;
+}
+body {
+  overflow-x: hidden;
+}
 
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 100px 1fr 100px;
+  gap: 1.5rem;
 }
 .primary-head {
+  display: flex;
   grid-column: span 3;
-  position: fixed;
   width: 100%;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.primary-head h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.primary-head h1 a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  margin: 2rem;
 }
 .primary-nav {
-  width: 100%;
   display: flex;
+  width: 100%;
   list-style-type: none;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: hsl(0 0% 0% / 0.5);
+}
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-nav {
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
+}
+.primary-nav a {
+  color: black;
+  padding: 1rem 3rem; 
+  font-family: "Work Sans";
+}
+.primary-nav a:hover {
+  text-decoration: overline;
+}
+.mobile-nav-toggle {
+  display: none;
 }
 .primary-content {
   grid-column: span 3;
+  width: 100%;
+  height: auto;
 }
 .primary-footer {
   grid-column: span 3;
+}
+
+@media (max-width: 35em) {
+  .primary-head h1 {
+    font-size: 2rem;
+  }
+  .primary-nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+    padding: min(30vh, 10rem) 2rem;
+    flex-direction: column;
+    z-index: 1000;
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+  .primary-nav li {
+    padding-bottom: 2em;
+  }
+  .primary-nav a {
+    text-decoration: none;
+  }
+  .primary-nav a:hover {
+    text-decoration: none;
+  }
+  .primary-nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    background: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: url(../images/x.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+  .primary-nav a {
+    text-decoration: none;
+  }
+  .primary-nav a:hover {
+    text-decoration: none;
+  }
+  .primary-head h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 35em) {
+  .primary-nav {
+    padding-block: 2rem;
+    padding-inline: clamp(3rem, 10vw, 10rem);
+  }
 }

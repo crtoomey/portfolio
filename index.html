@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;700&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <script src="./script.js" defer></script>
   <title>Colin Toomey</title>
@@ -32,23 +32,31 @@
 
   <main class="primary-content subcontainer">
 
-    <section class="marquee">
-      <marquee behavior="scroll" direction="left" class="marquee-text" scrollamount="20" scrolldelay="200ms">
-        Hi, my name is Colin Toomey. I make things. Like this <a href="./projects.html">website.</a>
-        And some <a href="">other stuff.</a> 
-      </marquee>
+    <section class="main-page-paragraph">
+      <p>
+        Hi, my name is Colin Toomey. <br> I'm a freelance web developer based in Rochester, NY.
+      </p>
     </section>
 
-    <section class="projects">
+    <section class="projects grid-element" aria-expanded="false">
       <h2>Projects</h2>
+      <p class="hidden-paragraph">
+        If you want to see some of the stuff I've worked on in the past visit the 
+        <a href="./projects.html">projects</a> page. For a list of projects I'm currently working
+        on, check out the <a href="#">WIP</a> page.
+      </p>
     </section>
 
-    <section class="about">
+    <section class="about grid-element" aria-expanded="false">
       <h2>About</h2>
+      <p class="hidden-paragraph">To learn a little bit more about who I am <a href="./about.html">click here.</a></p>
     </section>
 
-    <section class="contact">
+    <section class="contact grid-element" aria-expanded="false">
       <h2>Contact</h2>
+      <p class="hidden-paragraph">If you have a project that you think I might be interested
+        in, head over to the <a href="./contact.html">contact</a> page.
+      </p>
     </section>
 
 

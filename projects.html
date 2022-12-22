@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;700&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./script.js" defer></script>
+  <title>Colin Toomey</title>
+</head>
+<body class="projects-page-container">
+
+  <header class="primary-head">
+
+    <div class="logo">
+      <h1><a href="./index.html">Toomey</a></h1>
+    </div>
+
+    <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
+
+    <nav>
+      <ul id="primary-nav" class="primary-nav" data-visible="false">
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="primary-content">
+
+    <section class="projects-title">
+      <h1>Projects</h1>
+    </section>
+    <section class="projects-page-content">
+      <h2 class="project-1-title">Chief Keef Philosophy Generator</h2>
+      <img src="./assets/images/sosa-projects.PNG" alt="Screen capture of my Chief Keef Project" class="project-1-image">
+      <p class="project-1-paragraph">
+        This CodeCademy project was just some dumb fun. The instructions were to loop through two arrays of strings in JavaScript
+        and combine them to generate a message and display that message on a webpage. I decided to take some famous philosophy quotes 
+        for the first array. For the second array I decided to take Chief Keef ab libs and add them to the philosophy quotes. 
+        To complete the message I added "-Chief Keef" to make it seem like the Almighty Sosa said it himself.
+        <br>
+        This was one of my first JavaScript projects and I ran into a few problems along the way. The first one I had to deal with
+        was the fact that you could press the "Generate" button an infinite amount of times, each time generating the same message. I'll admit it
+        took me a while to make the button only clickable once but I eventually got it. However, this introduced another problem, you could only
+        hit the "Generate" button once. To fix this I made a "Reset" button that just refreshed the page.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="primary-footer">
+    <p>
+      &copy; Colin Toomey 2022
+    </p>
+  </footer>
+
+</body>
+</html>

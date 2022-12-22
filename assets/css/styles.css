@@ -13,7 +13,13 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 720px 100px;
+  grid-template-rows: 100px 75vh 100px;
+  gap: 1.5rem;
+}
+.projects-page-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto 100px;
   gap: 1.5rem;
 }
 .subcontainer {
@@ -44,11 +50,10 @@ body {
 .logo {
   margin: 2rem;
 }
-.logo img {
-  display: block;
-  width: 7rem;
-  aspect-ratio: 1;
-
+.logo h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .primary-nav {
   display: flex;
@@ -67,14 +72,11 @@ body {
 .primary-nav a {
   color: black;
   padding: 1rem 3rem; 
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
 }
 .primary-nav a:hover {
   text-decoration: overline;
   color: #004ecf;
-}
-.primary-nav a:visited {
-  color: black;
 }
 .mobile-nav-toggle {
   display: none;
@@ -100,18 +102,21 @@ body {
   grid-row: 4;
   border: 3px solid #226af2;
   border-radius: 3rem;
+  bottom: 2rem;
 }
 .about {
   grid-column: 3 / span 1;
   grid-row: 4;
   border: 3px solid #226af2;
   border-radius: 3rem;
+  bottom: 2rem;
 }
 .contact {
   grid-column: 4 / span 1;
   grid-row: 4;
   border: 3px solid #226af2;
   border-radius: 3rem;
+  bottom: 2rem;
 }
 section h2 {
   font-family: 'Work Sans', sans-serif;
@@ -144,6 +149,106 @@ section h2 {
   padding: 0.5rem;
 }
 
+
+
+.contact-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  grid-column: span 4;
+}
+.socials, .email {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+.email {
+  grid-column: 1 / span 2;
+}
+.socials {
+  grid-column: 3 / span 2;
+}
+.socials p, .email p {
+  vertical-align: middle;
+  display: inline-block;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+.socials img, .email img {
+  vertical-align: middle;
+  display: inline-block;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem;
+}
+.socials a {
+  color: black;
+}
+.socials a:hover {
+  text-decoration: overline;
+  color: #004ecf;
+}
+.about-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-paragraph {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: justify;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  color: #000370;
+}
+.projects-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+}
+.project-1-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  color: #000370;
+}
+.project-1-paragraph {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: justify;
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 100%;
+  color: #000370;
+}
+.project-1-image {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+}
+.projects-page-content {
+  width: 100%;
+}
 
 @media (max-width: 35em) {
   .primary-head h1 {

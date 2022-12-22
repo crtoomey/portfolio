@@ -249,6 +249,20 @@ section h2 {
 .projects-page-content {
   width: 100%;
 }
+.construction {
+  grid-column: span 3;
+}
+.construction p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: justify;
+  margin-left: 2rem;
+  padding: 1rem;
+  color: #000370;
+  vertical-align: middle;
+  display: inline-block;
+}
 
 @media (max-width: 35em) {
   .primary-head h1 {
